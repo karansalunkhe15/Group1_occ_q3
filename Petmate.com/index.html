@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petmate Brands Website</title>
+    <!-- favicon img -->
+    <link rel="icon" href="/images/favicon.png" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/app.js"></script>
+  </head>
+  <body>
+    <!-- Header section start ------------------------------------------------------------------>
+    <!---------------- side navbar start --------------------->
+    <div class="container-fluid">
+      <div class="row">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a class="a_tag" id="signin" href="#">Sign In or Register</a>
+          <a class="a_tag" href="#">Dogs</a>
+          <a class="a_tag" href="#">Cats</a>
+          <a class="a_tag" href="#">Birds & Small Pets</a>
+          <a class="a_tag" href="#">Brands</a>
+          <a class="a_tag" href="#">Educations</a>
+          <a class="a_tag" href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <!--------------------- side navbar end --------------------->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <span
+            style="font-size: 30px; cursor: pointer"
+            id="burgerM"
+            class="burger"
+            onclick="openNav()"
+            >&#9776;
+          </span>
+          <img
+            src="https://www.petmate.com/ccstore/v1/images/?source=/file/general/Petmate_Logo%20Blue.png&height=57&width=150"
+            class="logo"
+          />
+          <!-- second time   -->
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-cart"
+            viewBox="0 0 16 16"
+            id="svg_cart"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+            />
+          </svg>
+          <i class="bi bi-cart"></i>
+        </div>
+
+        <div class="col-md-6" style="margin-top: 25px">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search pet products & education"
+              style="z-index: 1"
+            />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  ></path>
+                </svg>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="cart" style="margin: 30px 30px" id="sec_cat">
+            <span>0</span> <span>items</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-cart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+            <i class="bi bi-cart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="menu">
+        <div class="dropdown">
+          <button class="dropbtn">Dogs</button>
+          <div class="dropdown-content">
+            <a class="heading" href="#">Gifts Guides</a>
+            <a class="heading" href="#">Accessories</a>
+            <a class="sub_menu" href="#">Apparel</a>
+            <a class="sub_menu" href="#">Goodie Box</a>
+            <a class="sub_menu" href="#">Pet Steps & Ramps</a>
+            <a class="sub_menu" href="#">Training Tools</a>
+
+            <a class="heading" href="#">Gifts Guides</a>
+            <a class="heading" href="#">Accessories</a>
+            <a class="sub_menu" href="#">Apparel</a>
+            <a class="sub_menu" href="#">Goodie Box</a>
+            <a class="sub_menu" href="#">Pet Steps & Ramps</a>
+            <a class="sub_menu" href="#">Training Tools</a>
+
+            <br />
+            <br />
+
+            <a class="heading" href="#">Bedding</a>
+            <a class="sub_menu" href="#">Blankets</a>
+            <a class="sub_menu" href="#">Elevated Beds</a>
+            <a class="sub_menu" href="#">Furniture</a>
+            <a class="sub_menu" href="#">Kennel Mats</a>
+            <a class="sub_menu" href="#">Lounger Beds</a>
+            <a class="sub_menu" href="#">Orthopedic Beds</a>
+            <a class="sub_menu" href="#">Outdoor Beds</a>
+            <a class="sub_menu" href="#">Pillow Beds</a>
+            <a class="sub_menu" href="#">Shaped & Bolster Beds</a>
+
+            <br />
+            <br />
+
+            <a class="heading" href="#">Collars & Leashes</a>
+            <a class="sub_menu" href="#">Collars</a>
+            <a class="sub_menu" href="#">Harnesses</a>
+            <a class="sub_menu" href="#">Leads</a>
+            <a class="sub_menu" href="#">Leashes</a>
+            <a class="sub_menu" href="#">Rectractables</a>
+            <a class="sub_menu" href="#">Tieouts & Cables</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Cats</button>
+          <div class="dropdown-content">
+            <a class="heading" href="#">Gifts Guides</a>
+            <a class="heading" href="#">Accessories</a>
+            <a class="sub_menu" href="#">Catnip</a>
+            <a class="sub_menu" href="#">GoodieBox</a>
+
+            <br />
+            <br />
+
+            <a class="heading" href="#">Bedding</a>
+            <a class="sub_menu" href="#">Bolster Beds</a>
+            <a class="sub_menu" href="#">Cave Beds</a>
+            <a class="sub_menu" href="#">Kennel Mats</a>
+            <a class="sub_menu" href="#">Lounger Beds</a>
+            <a class="sub_menu" href="#">Orthopedic Beds</a>
+
+            <br />
+            <br />
+
+            <a class="heading" href="#">Collars & Leashes</a>
+            <a class="sub_menu" href="#">Collars</a>
+
+            <br />
+            <br />
+
+            <a class="heading" href="#">Feeding & Watering</a>
+            <a class="sub_menu" href="#">Accessories</a>
+            <a class="sub_menu" href="#">Automatic Feeders</a>
+            <a class="sub_menu" href="#">AutomaticWaters</a>
+            <a class="sub_menu" href="#">Double Diners</a>
+            <a class="sub_menu" href="#">Food Storage</a>
+            <a class="sub_menu" href="#">Gravity Feeders</a>
+            <a class="sub_menu" href="#">Placemats</a>
+            <a class="sub_menu" href="#">Single Bowls</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Birds & Small Pets</button>
+          <div class="dropdown-content">
+            <a class="heading" href="#">Accessories</a>
+            <a class="sub_menu" href="#">Bird Baths</a>
+            <a class="sub_menu" href="#">Bird Perches</a>
+            <a class="sub_menu" href="#">Fish Supplies</a>
+
+            <br />
+            <br />
+
+            <a class="heading" href="#">Feeding & Watering</a>
+            <a class="sub_menu" href="#">Feeders</a>
+            <a class="sub_menu" href="#">Food Storage</a>
+            <a class="sub_menu" href="#">Waterers</a>
+
+            <br />
+            <br />
+
+            <a class="heading" href="#">Shelter</a>
+            <a class="sub_menu" href="#">ChickenCoops</a>
+
+            <br />
+            <br />
+
+            <a class="heading" href="#">Toys</a>
+            <a class="sub_menu" href="#">Interactive Toys</a>
+            <a class="sub_menu" href="#">Minor Toys</a>
+            <a class="sub_menu" href="#">Solo Play Toys</a>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Brands</button>
+          <div class="dropdown-content">
+            <a class="heading" id="brands" href="#">Our Brands</a>
+            <div class="contianer-fluid" style="width: 570px">
+              <div class="row row_3" style="margin: 12px">
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand1.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand2.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand3.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="row row_3" style="margin: 12px">
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand4.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand5.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand6.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="row row_3" style="margin: 12px">
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand1.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand6.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+                <div class="col">
+                  <a href="" class="thumbnail"
+                    ><img
+                      src="images/brand3.webp"
+                      alt=""
+                      style="width: 145px; height: 100px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Sale</button>
+          <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Education</button>
+          <div class="dropdown-content"></div>
+        </div>
+
+        <div class="float_right_1">
+          <div class="dropdown account">
+            <button class="dropbtn">My Account</button>
+            <span class="myaccount-icon">
+              <img src="images/paw.png" alt="" />
+            </span>
+            <div class="dropdown-content"></div>
+          </div>
+
+          <div class="dropdown help">
+            <button class="dropbtn">Help</button>
+            <span class="help-icon">
+              <img src="images/help.png" alt="" />
+            </span>
+            <div class="dropdown_help dropdown-content"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Header section  End ------------------------------------------------------------------>
+
+    <!-- section no 1 & 2 start ------------------------------------------------------------------>
+    <div class="container-fluid carousel_z">
+      <div class="row">
+        <div class="col">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="item active">
+                <img
+                  src="images/PM_Homepage-Banner_60years.jpg"
+                  alt="Los Angeles"
+                />
+              </div>
+
+              <div class="item">
+                <img src="images/CI_Holiday_Web-Banner.webp" alt="Chicago" />
+              </div>
+
+              <div class="item">
+                <img
+                  src="images/PM_HolidayGift-Guide_WebBanner_1903x650.webp"
+                  alt="New york"
+                />
+              </div>
+            </div>
+
+            <a
+              class="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="clearfix">
+            <div class="img-container">
+              <img src="images/snozzy.jpg" alt="Italy" style="width: 100%" />
+            </div>
+            <div class="img-container">
+              <img
+                src="images/food_container.jpg"
+                alt="Forest"
+                style="width: 100%"
+              />
+            </div>
+            <div class="img-container">
+              <img
+                src="images/holiday_puppy.jpg"
+                alt="Mountains"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section no 1 & 2 End ------------------------------------------------------------------>
+
+    <!-- section no 3 & 4 Start ------------------------------------------------------------------>
+    <div class="container-fluid">
+      <div class="row" style="margin-bottom: 2rem">
+        <div class="col-sm-9 col-xs-12">
+          <h2>Our Brands</h2>
+        </div>
+        <div
+          class="col-sm-3 col-xs-12"
+          style="font-family: Arial, Helvetica, sans-serif"
+        >
+          <h4
+            style="margin-top: 35px; margin-left: 2rem; color: rgb(9, 9, 129)"
+            href="#"
+            id="img-cent"
+          >
+            SHOP ALL BRANDS <img src="images\back-arrow.png" />
+            <img src="images\right-arrow.png" />
+          </h4>
+        </div>
+      </div>
+      <section>
+        <div class="row">
+          <div class="col-sm-2" id="img-cent">
+            <img
+              src="images\brand1.webp"
+              class="img-thumbnail"
+              alt="Cinque Terre"
+              width="180"
+              height="120"
+            />
+          </div>
+          <div class="col-sm-2" id="img-cent">
+            <img
+              src="images\brand2.webp"
+              class="img-thumbnail"
+              alt="Cinque Terre"
+              width="180"
+              height="120"
+            />
+          </div>
+          <div class="col-sm-2" id="img-cent">
+            <img
+              src="images\brand3.webp"
+              class="img-thumbnail"
+              alt="Cinque Terre"
+              width="180"
+              height="120"
+            />
+          </div>
+          <div class="col-sm-2" id="img-cent">
+            <img
+              src="images\brand4.webp"
+              class="img-thumbnail"
+              alt="Cinque Terre"
+              width="180"
+              height="120"
+            />
+          </div>
+          <div class="col-sm-2" id="img-cent">
+            <img
+              src="images\brand6.webp"
+              class="img-thumbnail"
+              alt="Cinque Terre"
+              width="180"
+              height="120"
+            />
+          </div>
+          <div class="col-sm-2" id="img-cent">
+            <img
+              src="images\brand7.webp"
+              class="img-thumbnail"
+              alt="Cinque Terre"
+              width="180"
+              height="120"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row" style="margin-bottom: 2rem">
+          <h2 class="text-center">Petmate Picks</h2>
+
+          <div class="arrow-col">
+            <img src="images/back-arrow.png" alt="" />
+            <img src="images/right-arrow.png" alt="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-2" id="img-center">
+            <img
+              src="images\pet1.webp"
+              class="img-rounded"
+              alt="pet1"
+              width="160px"
+            />
+            <span>
+              <h4>
+                <div class="label label-default" id="new1">New</div>
+              </h4>
+            </span>
+            <p style="text-align: center"><b>$10.99</b></p>
+            <p style="text-align: center" class="under">
+              Zoobilee Angel Heggies Dog Toy
+            </p>
+            <div class="star-container">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+
+          <div class="col-sm-2" id="img-center">
+            <img
+              src="images\pet2.webp"
+              class="img-rounded"
+              alt="pet1"
+              width="160"
+              height="160"
+            /><span>
+              <h4>
+                <div class="label label-default" id="new1">New</div>
+              </h4>
+            </span>
+            <p style="text-align: center"><b>$10.99</b></p>
+
+            <p style="text-align: center" class="under">
+              Zoobilee Angel Heggies Dog Toy
+            </p>
+
+            <div class="star-container">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="col-sm-2" id="img-center">
+            <img
+              src="images\pet3.webp"
+              class="img-rounded"
+              alt="pet1"
+              width="160"
+              height="160"
+            />
+            <span>
+              <h4>
+                <div class="label label-default" id="new1">New</div>
+              </h4>
+            </span>
+            <p style="text-align: center"><b>$10.99</b></p>
+
+            <p style="text-align: center" class="under">
+              FAT CAT Holiday Boogie Cat Mat
+            </p>
+
+            <div class="star-container">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="col-sm-2" id="img-center">
+            <img
+              src="images\pet4.webp"
+              class="img-rounded"
+              alt="pet1"
+              width="160"
+              height="160"
+            />
+            <span>
+              <h4>
+                <div class="label label-default" id="new1">New</div>
+              </h4>
+            </span>
+            <p style="text-align: center"><b>$10.99</b></p>
+
+            <p style="text-align: center" class="under">
+              Zoobilee Angel Heggies Dog Toy
+            </p>
+
+            <div class="star-container">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="col-sm-2" id="img-center">
+            <img
+              src="images\pet5.webp"
+              class="img-rounded"
+              alt="pet1"
+              width="160"
+              height="160"
+            />
+            <span>
+              <h4>
+                <div class="label label-default" id="new1">New</div>
+              </h4>
+            </span>
+            <p style="text-align: center"><b>$10.99</b></p>
+
+            <p style="text-align: center">Zoobilee Angel Heggies Dog Toy</p>
+
+            <div class="star-container">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="col-sm-2" id="img-center">
+            <img
+              src="images\pet6.webp"
+              class="img-rounded"
+              alt="pet1"
+              width="160"
+              height="160"
+            />
+            <span>
+              <h4>
+                <div class="label label-default" id="new1">New</div>
+              </h4>
+            </span>
+            <p style="text-align: center"><b>$10.99</b></p>
+
+            <p style="text-align: center">Zoobilee Angel Heggies Dog Toy</p>
+
+            <div class="star-container">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- section no 3 & 4 End ------------------------------------------------------------------>
+
+    <!-- section no 5 start ------------------------------------------------------------------>
+    <br /><br /><br />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="img">
+            <a>
+              <img
+                src="https://www.petmate.com/file/general/PM_OurStory_Homepage_Banner_1680x420.jpg"
+                alt="Our Story"
+                width="3788px"
+                height="952px"
+                id="imgg_1"
+              />
+            </a>
+          </div>
+
+          <div id="img-responsive">
+            <div class="img1">
+              <a>
+                <img
+                  class="img-responsive"
+                  width="100%"
+                  src="https://www.petmate.com/file/general/OurStoryMobile_L.jpg"
+                  id="imgg_1"
+                />
+              </a>
+            </div>
+            <div class="img2">
+              <a>
+                <img
+                  class="img-responsive"
+                  width="100%"
+                  src="https://www.petmate.com/file/general/OurStoryMobile_R.jpg"
+                  id="imgg_1"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section no 5 End ------------------------------------------------------------------>
+
+    <!-- section no 6 start ------------------------------------------------------------------>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12">
+          <h2 class="line1">Canine Know-How. Feline Facts.</h2>
+          <p class="line2">All-Around Pet Answers.</p>
+          <p class="content_1">
+            When your dog won't stop whining or your cat won't stop scratching,
+            find the right answers that will put your mind (and your heart) at
+            ease.
+          </p>
+          <a href="#" class="redirect"
+            >MORE ARTICLES <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- section no 6 End ------------------------------------------------------------------>
+
+    <!-- section no 7 start ---------------------------------------------------------------->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="clearfix_1 containerO">
+            <div class="img-container_1">
+              <div class="img1-container">
+                <img
+                  src="/images/dog1.webp"
+                  alt="Italy"
+                  style="width: 100%"
+                  height="200px"
+                  class="image"
+                />
+
+                <div class="overlay_1">
+                  <div class="text">
+                    <i class="fa fa-file"></i><br />Read Article
+                  </div>
+                </div>
+              </div>
+              <div class="desc"><a href="#">Puppy's First Night</a></div>
+            </div>
+
+            <div class="img-container_1">
+              <div class="img1-container">
+                <img
+                  src="/images/cat2.webp"
+                  alt="Italy"
+                  style="width: 100%"
+                  height="200px"
+                  class="image"
+                />
+
+                <div class="overlay_1">
+                  <div class="text">
+                    <i class="fa fa-file"></i><br />Read Article
+                  </div>
+                </div>
+              </div>
+              <div class="desc"><a href="#">Why Do Cats Lick Plastic? </a></div>
+            </div>
+
+            <div class="img-container_1">
+              <div class="img1-container">
+                <img
+                  src="/images/dog2.webp"
+                  alt="Italy"
+                  style="width: 100%"
+                  height="200px"
+                  class="image"
+                />
+
+                <div class="overlay_1">
+                  <div class="text">
+                    <i class="fa fa-file"></i><br />Read Article
+                  </div>
+                </div>
+              </div>
+              <div class="desc">
+                <a href="#">5 Fun Fall Activities To Do With Your Dog</a>
+              </div>
+            </div>
+
+            <div class="img-container_1">
+              <div class="img1-container">
+                <img
+                  src="/images/cat1.webp"
+                  alt="Italy"
+                  style="width: 100%"
+                  height="200px"
+                  class="image"
+                />
+
+                <div class="overlay_1">
+                  <div class="text">
+                    <i class="fa fa-file"></i><br />Read Article
+                  </div>
+                </div>
+              </div>
+              <div class="desc">
+                <a href="#">Cats Hate Water - Fact or Fiction?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section no 7 End ---------------------------------------------------------------->
+
+    <!-- section no 8 start ---------------------------------------------------------------->
+    <section class="section_8">
+      <div class="container">
+        <div class="row">
+          <h3 class="heading_categories">Shop Our Popular Categories</h3>
+        </div>
+
+        <div class="row cont">
+          <div class="col-md-4">
+            <div class="content1">
+              <h4>Dogs</h4>
+              <p><a href="#">Dog Accessories</a></p>
+              <p><a href="#">Dog Bedding</a></p>
+              <p><a href="#">Dog Collars & Leashes</a></p>
+              <p><a href="#">Feeding & Watering</a></p>
+              <p><a href="#">Grooming Accessories For Dogs</a></p>
+              <p><a href="#">Dog Kennels</a></p>
+              <p><a href="#">Shelters For Dogs</a></p>
+              <p><a href="#">Popular Dog Toys</a></p>
+              <p><a href="#">Travel Accessories For Dog Owners</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content1">
+              <h4>Cats</h4>
+              <p><a href="#">Accessories For Cats</a></p>
+              <p><a href="#">Cat Beds</a></p>
+              <p><a href="#">Cat Collars & Leashes</a></p>
+              <p><a href="#"> Feeding & Watering For Cats</a></p>
+              <p><a href="#">Cat Grooming Supplies</a></p>
+              <p><a href="#"> Cat Kennels & Carriers</a></p>
+              <p><a href="#">Top Cat Shelters</a></p>
+              <p><a href="#"> Cat Toys</a></p>
+              <p><a href="#">Travel Accessories For Cat Owners</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content1">
+              <h4>Replacement Parts</h4>
+              <p><a href="#">All Replacement Parts</a></p>
+              <p><a href="#"> Feeding & Watering Replacement Parts</a></p>
+              <p><a href="#">Kennel & Carrier Replacement Parts </a></p>
+              <p><a href="#"> Litter Pan Replacement Parts</a></p>
+              <p><a href="#"> Shelter Replacement Parts</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <!-- section no 8 start ---------------------------------------------------------------->
+    <!-- section no 9 start ---------------------------------------------------------------->
+
+    <div style="margin: 50px" class="section_9">
+      <h1 class="head_S9">Petmate Perks</h1>
+      <p class="para_S9">
+        Sign up for our list to be the first to receive pawsome deals and
+        pet-parent tips*.
+      </p>
+
+      <div>
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input type="email" class="input-field" placeholder="Email Address" />
+          <i class="fa fa-arrow-right"></i>
+        </div>
+
+        <p class="cont2_para_2">
+          *Your email will be entered into the Petmate mailing list. <br />
+          You may unsubscribe at any time
+        </p>
+      </div>
+    </div>
+    <!-- section no 9 End ---------------------------------------------------------------->
+
+    <!-- footer started here ---------------------------------------------------------------------->
+    <footer>
+      <div class="container-fluid" style="margin-top: 60px">
+        <div class="row">
+          <div class="col-md-12">
+            <footer class="footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="footer-title">
+                      Shop By
+                      <i
+                        class="fa fa-plus"
+                        onclick="shopOpen()"
+                        ondblclick="shopClose()"
+                      ></i>
+                    </div>
+
+                    <div class="footer-links" id="footer_shop">
+                      <a href="#"> Dogs </a>
+                      <a href="#"> Cats</a>
+                      <a href="#"> Birds </a>
+                      <a href="#"> Replacement Parts </a>
+                      <a href="#"> Brands</a>
+                      <a href="#"> Gift guides </a>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="footer-title">
+                      Support<i
+                        class="fa fa-plus"
+                        onclick="suppOpen()"
+                        ondblclick="suppClose()"
+                      ></i>
+                    </div>
+                    <div class="footer-links" id="footer_support">
+                      <a href="#"> Contact Us </a>
+                      <a href="#"> Where To Buy</a>
+                      <a href="#"> Return policy </a>
+                      <a href="#"> Shopping policy </a>
+                      <a href="#"> Map policy </a>
+                      <a href="#"> Shopping policy </a>
+                      <a href="#"> International Shipping </a>
+                      <a href="#"> FAQS </a>
+                      <a href="#"> Site Map </a>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="footer-title">
+                      Company<i
+                        class="fa fa-plus"
+                        onclick="compOpen()"
+                        ondblclick="compClose()"
+                      ></i>
+                    </div>
+                    <div class="footer-links" id="footer_company">
+                      <a href="#"> Our Story </a>
+                      <a href="#"> Careers </a>
+                      <a href="#"> Affiliates </a>
+                      <a href="#">Media</a>
+                      <a href="#">Adopt A Pet</a>
+                      <a href="#">Corporate Sustainability</a>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="footer-title">
+                      Account<i
+                        class="fa fa-plus"
+                        onclick="AccOpen()"
+                        ondblclick="AccClose()"
+                      ></i>
+                    </div>
+                    <div class="footer-links" id="footer_Acc">
+                      <a href="#"> Login </a>
+                      <a href="#"> Create Account </a>
+                      <a href="#"> Order Status </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3" id="foot_links">
+                    <div class="p-5">
+                      <img
+                        src="https://www.petmate.com/ccstore/v1/images/?source=/file/general/PetRedesign_logo_white.png&height=45&width=120"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="footer-social-links">
+                      <h5>Follow Petmate</h5>
+
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook" aria-hidden="true"> </i>
+                        </a>
+
+                        <a href="#">
+                          <i class="fa fa-twitter" aria-hidden="true"> </i>
+                        </a>
+
+                        <a href="#">
+                          <i class="fa fa-instagram" aria-hidden="true"> </i>
+                        </a>
+
+                        <a href="#">
+                          <i class="fa fa-pinterest" aria-hidden="true"> </i>
+                        </a>
+
+                        <a href="#">
+                          <i class="fa fa-youtube" aria-hidden="true"> </i>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-bottom">
+              <span><a href="#">Term User</a></span>
+              <span><a href="#">Privacy police</a></span>
+              <span><a href="#">Accessability Statement</a></span
+              >© 2021 Doskocil Manufacturing Company, Inc. dba Petmate
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer End here ---------------------------------------------------------------------->
+  </body>
+</html>
